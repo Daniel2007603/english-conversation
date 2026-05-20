@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>English Conversation 2</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+            <div id="loader">
+                <div class="spinner"></div>
+                <h2>Loading English Conversation 2...</h2>
+            </div>
+                <!-- START SCREEN -->
+            <div id="startScreen">
+                <h1>Welcome to English Conversation 2</h1>
+                <p>Click below to start learning 🚀</p>
+                <button onclick="playSound(); startApp()">START</button>
+            </div>
+        <!-- HEADER -->
+            <button class="menu-btn hidden-header" id="menuButton" onclick="toggleSidebar()">☰ Menu</button>
+                <header class="header hidden-header" id="mainHeader">
+                    <h1>English Conversation 2</h1>
+                    <p>Speaking • Interaction • Communication Skills</p>
+                </header>
+            <div id="overlay" onclick="closeSidebar()"></div>
+        <div class="sidebar" id="sidebar">
+            <h2>Menu</h2>
+                <a onclick="showMenu(event,'home')" class="active">🏠 Home</a>
+                <a onclick="showMenu(event,'materials')" class="materials">📚 Materials</a>
+                <a onclick="showMenu(event,'practice')" class="practice">🎤 Practice</a>
+                <a onclick="showMenu(event,'tips')" class="tips">💡 Tips</a>
+                <a onclick="showMenu(event,'about')" class="about">👤 About</a>
+                <a onclick="toggleDarkMode()" class="dark-mode">🌙 Mode</a>
+        </div>
+    <main>
+    <section id="home">
+        <div class="main-content">
+            <div id="landing" class="hero">
+                <h1 id="typing"></h1>
+                <div class="live-status" id="homeStatus">
+                    🟢 Learning System Active
+                </div>
+                <p>Click menu to start exploring 🚀</p>
+            </div>
+        </div>
+        <!-- INTRO -->
+        <div class="card full">
+            <h3>🌍 Introduction</h3>
+            <p>
+                English has become a global language that plays an important role in education,
+                business, and international communication. In today’s modern world, the ability
+                to communicate effectively in English is not only an advantage but also a necessity.
+            </p>
+            <p>
+                This website provides a digital learning environment where students can access
+                course materials, understand key concepts, and practice their speaking skills
+                in a more interactive and engaging way.
+            </p>
+        </div>
+        <!-- OBJECTIVES -->
+        <div class="card full">
+            <h3>🎯 Learning Objectives</h3>
+            <p>
+                The main objectives of this learning platform are:
+            </p>
+            <ul>
+                <li>To improve students’ speaking and communication skills</li>
+                <li>To help students understand real-life English usage</li>
+                <li>To develop confidence in expressing ideas in English</li>
+                <li>To provide practical learning materials from classroom presentations</li>
+            </ul>
+        </div>
+        <!-- COURSE SCOPE -->
+        <div class="card full">
+            <h3>📖 Course Scope</h3>
+            <p>
+                The English Conversation 2 course focuses on practical communication skills 
+                used in various real-life contexts. Students will learn how to:
+            </p>
+            <ul>
+                <li>Deliver storytelling effectively</li>
+                <li>Present news using proper structure</li>
+                <li>Create persuasive advertisements</li>
+                <li>Communicate in business situations (buying & selling)</li>
+                <li>Understand the importance of English in professional environments</li>
+            </ul>
+        </div>
+        <!-- BENEFITS -->
+        <div class="card full">
+            <h3>💡 Benefits of Learning Through This Website</h3>
+            <p>
+                By using this website, students will gain several benefits:
+            </p>
+            <ul>
+                <li>Easy access to all learning materials in one place</li>
+                <li>Better understanding through structured explanations</li>
+                <li>Opportunities to practice English conversation independently</li>
+                <li>Improved confidence in speaking and presenting ideas</li>
+            </ul>
+        </div>
+        <div class="hero premium-hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+                <div class="live-status" id="premiumStatus">
+                    ⚡ Learning System Active
+                </div>
+                <h1 class="hero-title">
+                    Learn English Conversation Effectively
+                </h1>
+                <p class="hero-subtitle">
+                    Improve your speaking, communication, and confidence
+                    through interactive modern learning experiences.
+                </p>
+                <div class="hero-buttons">
+                    <div class="voice-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button onclick="showSection('materials')" class="btn-primary">
+                        📚 Explore Materials
+                    </button>
+                    <button onclick="showSection('practice')" class="btn-secondary">
+                        🎤 Start Practice
+                    </button>
+                </div>
+                <!-- HERO STATS -->
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <h2>14+</h2>
+                        <p>Materials</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>100+</h2>
+                        <p>Exercises</p>
+                    </div>
+                    <div class="stat-box">
+                        <h2>24/7</h2>
+                        <p>Learning Access</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- MOTIVATION -->
+        <div class="hero">
+            <h2>🚀 Start Practicing Today!</h2>
+            <p>
+                Consistent practice is the key to mastering English.
+                Explore the materials, practice speaking, and improve your skills step by step.
+            </p>
+            <button onclick="showSection('practice')">
+                Start Practice
+            </button>
+        </div>
+    </section>
+
+    <section id="materials">
+        <h2>📚 Learning Materials</h2>
+        <p style="text-align:center;">
+            These materials are based on classroom presentations in English Conversation 2 
+            and are designed to improve students’ communication skills in real-life contexts.
+        </p>
+        <!-- 1 -->
+        <div class="grid">
+            <div class="card">
+                <div class="week-badge">Week 2</div>
+                <div class="material-icon">🛒</div>
+                <div class="material-tag">Business Communication</div>
+                <div class="material-content">
+                    <h3>1. Selling, Buying & Bargaining</h3>
+                    <p class="material-short">
+                        This material focuses on daily English conversations
+                        in business situations.
+                    </p>
+                    <button
+                    class="read-btn"
+                    onclick="toggleMaterial('mat1')">
+                    📖 Read More
+                </button>
+                <div class="material-detail" id="mat1">
+                    <h4>📌 What is it about?</h4>
+                    <p>
+                        Students learn expressions used in shopping,
+                        asking prices, negotiating, and making complaints.
+                    </p>
+                    <h4>💡 Key Expressions</h4>
+                    <ul>
+                        <li>Asking price → "How much is this?"</li>
+                        <li>Selling → "How can I help you?"</li>
+                        <li>Bargaining → "Could you give me a discount?"</li>
+                        <li>Complaining → "I have a complaint"</li>
+                    </ul>
+                    <h4>🛒 Skills Learned</h4>
+                    <ul>
+                        <li>Communicating with customers</li>
+                        <li>Negotiating prices politely</li>
+                        <li>Handling complaints professionally</li>
+                        <li>Using business vocabulary in English</li>
+                    </ul>
+                    <button onclick="openQuiz('bab1')">
+                        Take Quiz
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="card">
+            <div class="week-badge">Week 4</div>
+            <div class="material-icon">📺</div>
+            <div class="material-tag">Creative Promotion</div>
+            <div class="material-content">
+                <h3>2. Advertisement</h3>
+                <p class="material-short">
+                    Learn how advertisements attract people
+                    using persuasive English communication.
+                </p>
+                <button
+                class="read-btn"
+                onclick="toggleMaterial('mat2')">
+                📖 Read More
+            </button>
+            <div class="material-detail" id="mat2">
+                <p>
+                    Advertisement is a form of communication used to promote products,
+                    services, or ideas and persuade people to take action.
+                </p>
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students learn how to create effective and persuasive
+                    advertisements in English.
+                </p>
+                <h4>💡 Key Elements</h4>
+                <ul>
+                    <li>Interesting and persuasive language</li>
+                    <li>Clear product information</li>
+                    <li>Creative visual design</li>
+                    <li>Promotion and branding</li>
+                </ul>
+                <h4>📺 Types of Ads</h4>
+                <ul>
+                    <li>Social media ads</li>
+                    <li>Television advertisements</li>
+                    <li>Endorsement advertisements</li>
+                </ul>
+                <h4>🎯 Activity</h4>
+                <p>
+                    Students create two advertisement videos:
+                    television advertisement and endorsement advertisement.
+                </p>
+                <button onclick="openQuiz('bab2')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="card">
+        <div class="week-badge">Week 5</div>
+        <div class="material-icon">📰</div>
+        <div class="material-tag">News Communication</div>
+        <div class="material-content">
+            <h3>3. News Item & Newscasting</h3>
+            <p class="material-short">
+                Learn how to write and present news
+                clearly with proper structure and delivery.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat3')">
+            📖 Read More
+        </button>
+        <div class="material-detail" id="mat3">
+            <p>
+                News item is a text or speech that informs readers
+                or listeners about important and newsworthy events.
+            </p>
+            <h4>📌 What is it about?</h4>
+            <p>
+                Students learn how to write and present news clearly
+                using proper structure, pronunciation, and delivery.
+            </p>
+            <h4>💡 Generic Structure</h4>
+            <ul>
+                <li>Main Event → summary of the news</li>
+                <li>Background Event → details of the event</li>
+                <li>Source → statements from witnesses or experts</li>
+            </ul>
+            <h4>🎙️ Newscasting Skills</h4>
+            <ul>
+                <li>Voice modulation and pronunciation</li>
+                <li>Gesture and eye contact</li>
+                <li>News delivery and transitions</li>
+                <li>Opening and closing statements</li>
+            </ul>
+            <button onclick="openQuiz('bab3')">
+                        Take Quiz
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 4 -->
+<div class="card">
+    <div class="week-badge">Week 7</div>
+    <div class="material-icon">📖</div>
+    <div class="material-tag">Public Speaking</div>
+    <div class="material-content">
+        <h3>4. Storytelling</h3>
+        <p class="material-short">
+            Learn how to tell stories effectively
+            using verbal and non-verbal communication.
+        </p>
+        <button
+        class="read-btn"
+        onclick="toggleMaterial('mat4')">
+        📖 Read More
+        </button>
+        <div class="material-detail" id="mat4">
+            <p>
+                Storytelling is the interactive art of using words and actions
+                to reveal the elements of a story while encouraging
+                the listener’s imagination.
+            </p>
+            <h4>📌 What is it about?</h4>
+            <p>
+                Students learn how to deliver stories effectively
+                through verbal and non-verbal communication.
+            </p>
+            <h4>💡 The 4 Elements of Storytelling</h4>
+            <ul>
+                <li>Character → who is involved in the story</li>
+                <li>Problem → the conflict in the story</li>
+                <li>Action → how the story develops</li>
+                <li>Solution → how the problem is solved</li>
+            </ul>
+            <h4>🎯 Activity</h4>
+            <p>
+                Students are required to record a 2–3 minute
+                storytelling video and upload it online.
+            </p>
+            <button onclick="openQuiz('bab4')">
+                        Take Quiz
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 5 -->
+<div class="card">
+    <div class="week-badge">Week 9</div>
+    <div class="material-icon">🏭</div>
+    <div class="material-tag">Professional English</div>
+    <div class="material-content">
+        <h3>5. English in Industry</h3>
+        <p class="material-short">
+            Learn how English is used in professional
+            and industrial environments.
+        </p>
+        <button
+        class="read-btn"
+        onclick="toggleMaterial('mat5')">
+        📖 Read More
+        </button>
+        <div class="material-detail" id="mat5">
+            <p>
+                English plays an important role in professional
+                and industrial environments.
+            </p>
+            <h4>📌 What is it about?</h4>
+            <p>
+                Students learn how English is applied in workplaces,
+                industries, and professional communication.
+            </p>
+            <h4>🏭 Functions of English in Industry</h4>
+            <ul>
+                <li>Communication between workers and companies</li>
+                <li>Understanding manuals and technical instructions</li>
+                <li>Business presentations and meetings</li>
+                <li>International collaboration and networking</li>
+            </ul>
+            <h4>💡 Skills Developed</h4>
+            <ul>
+                <li>Professional speaking skills</li>
+                <li>Workplace communication</li>
+                <li>Presentation confidence</li>
+                <li>Technical vocabulary mastery</li>
+            </ul>
+            <h4>🎯 Learning Outcome</h4>
+            <p>
+                Students are expected to communicate more confidently
+                in professional situations using English.
+            </p>
+            <button onclick="openQuiz('bab5')">
+                        Take Quiz
+            </button>
+        </div>
+    </div>
+</div>
+<!-- 6 -->
+<div class="card">
+    <div class="week-badge">Week 10</div>
+    <div class="material-icon">💬</div>
+    <div class="material-tag">Discussion Skill</div>
+    <div class="material-content">
+        <h3>6. Asking & Giving Opinion</h3>
+        <p class="material-short">
+            Learn how to express opinions politely
+            in discussions and conversations.
+        </p>
+        <button
+        class="read-btn"
+        onclick="toggleMaterial('mat6')">
+        📖 Read More
+        </button>
+        <div class="material-detail" id="mat6">
+            <p>
+                Asking and giving opinion is an important communication skill
+                used in discussions and everyday conversations.
+            </p>
+            <h4>📌 What is it about?</h4>
+            <p>
+                Students learn how to express opinions politely
+                and respond appropriately to others.
+            </p>
+            <h4>💬 Common Expressions</h4>
+            <ul>
+                <li>"What do you think about it?"</li>
+                <li>"In my opinion..."</li>
+                <li>"I agree with you."</li>
+                <li>"I don't think so."</li>
+            </ul>
+            <h4>🧠 Skills Learned</h4>
+            <ul>
+                <li>Expressing opinions confidently</li>
+                <li>Responding politely in discussions</li>
+                <li>Building communication fluency</li>
+                <li>Using formal and informal expressions</li>
+            </ul>
+            <h4>🎯 Activity</h4>
+            <p>
+                Students practice group discussions
+                and present opinions about current topics.
+            </p>
+            <button onclick="openQuiz('bab6')">
+                        Take Quiz
+            </button>
+        </div>
+    </div>
+</div>
+<!-- WEEK 11 -->
+    <div class="card">
+        <div class="week-badge">Week 11</div>
+        <div class="material-icon">💼</div>
+        <div class="material-tag">Career Communication</div>
+        <div class="material-content">
+            <h3>7. Job Interview</h3>
+            <p class="material-short">
+                This material discusses how to prepare and answer
+                questions during a job interview professionally.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat11')">
+            📖 Read More
+            </button>
+            <div class="material-detail" id="mat11">
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students learn interview preparation, professional
+                    appearance, body language, and how to answer
+                    interview questions confidently.
+                </p>
+                <h4>💡 Common Interview Questions</h4>
+                <ul>
+                    <li>"Tell me about yourself."</li>
+                    <li>"Why do you want to work here?"</li>
+                    <li>"What are your strengths and weaknesses?"</li>
+                    <li>"Why should we hire you?"</li>
+                </ul>
+                <h4>👔 Skills Learned</h4>
+                <ul>
+                    <li>Speaking confidently in interviews</li>
+                    <li>Using formal English expressions</li>
+                    <li>Improving communication skills</li>
+                    <li>Preparing professional self-introduction</li>
+                </ul>
+                <button onclick="openQuiz('bab6')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- WEEK 12 -->
+    <div class="card">
+        <div class="week-badge">Week 12</div>
+        <div class="material-icon">📝</div>
+        <div class="material-tag">Academic Writing</div>
+        <div class="material-content">
+            <h3>8. Writing an Abstract</h3>
+            <p class="material-short">
+                This material explains how to write a concise
+                abstract for scientific or academic writing.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat12')">
+            📖 Read More
+            </button>
+            <div class="material-detail" id="mat12">
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students learn how to summarize research papers
+                    effectively using academic English in one paragraph.
+                </p>
+                <h4>💡 Main Contents of an Abstract</h4>
+                <ul>
+                    <li>Introduction of the topic</li>
+                    <li>Purpose of the research</li>
+                    <li>Research method</li>
+                    <li>Research findings and conclusion</li>
+                </ul>
+                <h4>📚 Skills Learned</h4>
+                <ul>
+                    <li>Writing concise academic summaries</li>
+                    <li>Using formal academic language</li>
+                    <li>Organizing research information clearly</li>
+                    <li>Creating effective keywords</li>
+                </ul>
+                <button onclick="openQuiz('bab8')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- WEEK 13 -->
+    <div class="card">
+        <div class="week-badge">Week 13</div>
+        <div class="material-icon">❌</div>
+        <div class="material-tag">Grammar & TOEIC</div>
+        <div class="material-content">
+            <h3>9. Error Recognition</h3>
+            <p class="material-short">
+                This material focuses on identifying grammatical
+                and vocabulary errors in English sentences.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat13')">
+            📖 Read More
+            </button>
+            <div class="material-detail" id="mat13">
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students practice recognizing common English
+                    mistakes related to grammar, word choice,
+                    sentence structure, and TOEIC reading questions.
+                </p>
+                <h4>💡 Common Errors</h4>
+                <ul>
+                    <li>Verb agreement errors</li>
+                    <li>Word form errors</li>
+                    <li>Preposition errors</li>
+                    <li>Pronoun and conjunction errors</li>
+                </ul>
+                <h4>📖 Skills Learned</h4>
+                <ul>
+                    <li>Analyzing sentence structure</li>
+                    <li>Improving grammar accuracy</li>
+                    <li>Understanding TOEIC reading questions</li>
+                    <li>Recognizing common writing mistakes</li>
+                </ul>
+                <button onclick="openQuiz('bab9')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- WEEK 14 TOEIC 1 -->
+    <div class="card">
+        <div class="week-badge">Week 14</div>
+        <div class="material-icon">🎧</div>
+        <div class="material-tag">TOEIC Preparation</div>
+        <div class="material-content">
+            <h3>10. TOEIC 1</h3>
+            <p class="material-short">
+                This material introduces TOEIC format,
+                listening section, and test strategies.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat14a')">
+            📖 Read More
+            </button>
+            <div class="material-detail" id="mat14a">
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students learn the TOEIC test structure,
+                    scoring system, and listening comprehension skills.
+                </p>
+                <h4>💡 TOEIC Listening Parts</h4>
+                <ul>
+                    <li>Photographs</li>
+                    <li>Question & Response</li>
+                    <li>Short Conversations</li>
+                    <li>Short Talks</li>
+                </ul>
+                <h4>🎯 Skills Learned</h4>
+                <ul>
+                    <li>Listening comprehension</li>
+                    <li>Understanding spoken English</li>
+                    <li>Answering TOEIC questions effectively</li>
+                    <li>Managing TOEIC test strategies</li>
+                </ul>
+                <button onclick="openQuiz('bab10')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- WEEK 14 TOEIC 2 -->
+    <div class="card">
+        <div class="week-badge">Week 14</div>
+        <div class="material-icon">📖</div>
+        <div class="material-tag">TOEIC Reading</div>
+        <div class="material-content">
+            <h3>11. TOEIC 2</h3>
+            <p class="material-short">
+                This material continues TOEIC practice
+                focusing on reading comprehension and grammar.
+            </p>
+            <button
+            class="read-btn"
+            onclick="toggleMaterial('mat14b')">
+            📖 Read More
+            </button>
+            <div class="material-detail" id="mat14b">
+                <h4>📌 What is it about?</h4>
+                <p>
+                    Students practice TOEIC reading questions,
+                    sentence completion, and comprehension skills.
+                </p>
+                <h4>💡 TOEIC Reading Parts</h4>
+                <ul>
+                    <li>Sentence Completion</li>
+                    <li>Error Recognition</li>
+                    <li>Reading Comprehension</li>
+                    <li>Vocabulary in Context</li>
+                </ul>
+                <h4>📚 Skills Learned</h4>
+                <ul>
+                    <li>Reading quickly and accurately</li>
+                    <li>Understanding grammar patterns</li>
+                    <li>Improving vocabulary mastery</li>
+                    <li>Answering TOEIC reading questions</li>
+                </ul>
+                <button onclick="openQuiz('bab11')">
+                        Take Quiz
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="quiz">
+    <div class="card">
+        <h2>🧠 Quiz Zone</h2>
+        <p>Select your chapter to start quiz:</p>
+        <div class="grid">
+            <button onclick="openQuiz('bab1')">Selling, Buying & Bargaining</button>
+            <button onclick="openQuiz('bab2')">Advertisement</button>
+            <button onclick="openQuiz('bab3')">News Item & Newscasting</button>
+            <button onclick="openQuiz('bab4')">Storytelling</button>
+            <button onclick="openQuiz('bab5')">English in Industry/button>
+            <button onclick="openQuiz('bab6')">Asking & Giving Opinion</button>
+            <button onclick="openQuiz('bab7')">Job Interview</button>
+            <button onclick="openQuiz('bab8')">Writing an Abstract</button>
+            <button onclick="openQuiz('bab9')">Error Recognition</button>
+            <button onclick="openQuiz('bab10')">TOEIC 1</button>
+            <button onclick="openQuiz('bab11')">📖 TOEIC 2</button>
+        </div>
+    </div>
+    <div id="quizContainer"></div>
+    <div class="card">
+        <p>Score: <span id="quizScore">0</span>/20</p>
+        <button onclick="finishQuiz()">Finish Quiz</button>
+    </div>
+</section>
+
+    <section id="practice">
+        <h2>🗣️ Conversation Practice</h2>
+        <!-- INTRO -->
+        <div class="card full">
+            <h3>📌 Practice Overview</h3>
+            <p>
+                This section is designed to help students practice their English speaking skills
+                through dialogues, role play, and interactive voice input.
+                Regular practice will improve fluency, pronunciation, and confidence.
+            </p>
+        </div>
+        <!-- SAMPLE DIALOGUES -->
+        <div class="card full">
+            <h3>💬 Sample Dialogues</h3>
+            <p><b>🔹 Shopping Conversation</b></p>
+            <p><b>Buyer:</b> How much is this item?</p>
+            <p><b>Seller:</b> It costs Rp50.000</p>
+            <p><b>Buyer:</b> Can you give me a discount?</p>
+            <p><b>Seller:</b> Sure, I can give you Rp45.000</p>
+            <hr>
+            <p><b>🔹 Self Introduction</b></p>
+            <p>Hello, my name is Daniel. I am a student of Information Technology.</p>
+            <p>I enjoy learning English and improving my communication skills.</p>
+            <hr>
+            <p><b>🔹 Asking Information</b></p>
+            <p><b>A:</b> Excuse me, where is the nearest bank?</p>
+            <p><b>B:</b> It is near the main street, next to the supermarket.</p>
+        </div>
+        <!-- ROLE PLAY -->
+        <div class="card full">
+            <h3>🎭 Role Play Activities</h3>
+            <p>Practice with your partner using these situations:</p>
+            <ul>
+                <li>Buyer and Seller (shopping & bargaining)</li>
+                <li>Job Interview conversation</li>
+                <li>Storytelling presentation</li>
+                <li>Advertisement promotion</li>
+                <li>Giving directions</li>
+            </ul>
+        </div>
+        <!-- DAILY EXPRESSIONS -->
+        <div class="card full">
+            <h3>🧠 Useful Daily Expressions</h3>
+            <ul>
+                <li><b>Greeting:</b> Hello, how are you?</li>
+                <li><b>Asking:</b> Could you help me?</li>
+                <li><b>Agreeing:</b> I agree with you</li>
+                <li><b>Disagreeing:</b> I’m not sure about that</li>
+                <li><b>Closing:</b> Thank you, see you later</li>
+            </ul>
+        </div>
+        <!-- SPEAKING PRACTICE -->
+        <div class="card full">
+            <h3>🎤 Speaking Practice (Voice Input)</h3>
+            <p>
+                Click "Start Speaking" and say something in English.
+                The system will convert your speech into text and give simple feedback.
+            </p>
+            <div class="speak-controls">
+    <button onclick="startRecognition()">
+        🎙️ Start Speaking
+    </button>
+
+    <button onclick="stopRecognition()">
+        ⏹️ Stop
+    </button>
+</div>
+            <p><b>Your Speech:</b></p>
+            <div id="output" style="background:#eee; padding:10px; border-radius:5px;">
+                (Your speech will appear here...)
+            </div>
+            <p><b>Feedback:</b></p>
+            <div id="feedback" style="background:#dff0d8; padding:10px; border-radius:5px;">
+                (Feedback will appear here...)
+            </div>
+        </div>
+        <div class="card full">
+            <h3>🏆 Your Learning Level</h3>
+            <div class="card full">
+                <h2>📈 Profile Progress</h2>
+                <p>
+                    XP:
+                    <span id="userXP">0</span>/100
+                </p>
+                <div class="xp-bar">
+                    <div id="xpFill"></div>
+                </div>
+                <p>
+                    Badge:
+                    <span id="userBadge">🎖️ New Learner</span>
+                </p>
+                <p><b>Level:</b> <span id="level">Beginner</span></p>
+                <p><b>Points:</b> <span id="points">0</span></p>
+            </div>
+            <div id="badge" style="margin-top:10px; font-size:18px;">
+                🎖️ No Badge Yet
+            </div>
+        </div>
+    </section>
+
+    <section id="tips">
+        <h2>💡 Learning Strategies & Tips</h2>
+        <p style="text-align:center;">
+            This section provides comprehensive strategies to improve English communication skills
+            through structured learning approaches. Each skill is explained with practical methods
+            that can be applied in daily learning activities.
+        </p>
+        <div class="grid">
+        <!-- LISTENING -->
+        <div class="card full">
+            <h3 onclick="toggleDetail('listeningDetail')">🎧 Listening Strategy</h3>
+            <p>
+                Listening is a fundamental skill in language acquisition because it builds understanding
+                of pronunciation, intonation, and real-life communication patterns used by native speakers.
+            </p>
+            <div id="listeningDetail" style="display:none;">
+                <h4>📌 Learning Focus</h4>
+                <p>
+                    Students should not focus on understanding every single word, but rather the main idea
+                    and key expressions used in conversations.
+                </p>
+                <h4>📌 Step-by-Step Strategy</h4>
+                <ul>
+                    <li>Step 1: Listen without subtitles to understand general meaning</li>
+                    <li>Step 2: Listen again using subtitles</li>
+                    <li>Step 3: Write down unfamiliar words</li>
+                    <li>Step 4: Repeat and imitate pronunciation (shadowing)</li>
+                </ul>
+                <h4>🎵 Recommended Songs (Clear Pronunciation)</h4>
+                <ul>
+                    <li>Perfect – Ed Sheeran</li>
+                    <li>Someone Like You – Adele</li>
+                    <li>Count on Me – Bruno Mars</li>
+                </ul>
+                <h4>💡 Additional Tips</h4>
+                <ul>
+                    <li>Use podcasts for beginners</li>
+                    <li>Practice listening at least 15 minutes daily</li>
+                    <li>Focus on accent and stress patterns</li>
+                </ul>
+            </div>
+        </div>
+        <!-- SPEAKING -->
+        <div class="card full">
+            <h3 onclick="toggleDetail('speakingDetail')">🗣️ Speaking Strategy</h3>
+            <p>
+                Speaking is the productive skill that reflects how well a learner can use English
+                in real communication. Confidence plays a major role in developing speaking ability.
+            </p>
+            <div id="speakingDetail" style="display:none;">
+                <h4>📌 Learning Focus</h4>
+                <p>
+                    The goal of speaking is not grammatical perfection, but the ability to express ideas clearly.
+                </p>
+                <h4>📌 Practice Techniques</h4>
+                <ul>
+                    <li>Practice self-introduction daily</li>
+                    <li>Use mirror speaking to build confidence</li>
+                    <li>Record your voice and evaluate pronunciation</li>
+                    <li>Practice role play based on real-life situations</li>
+                </ul>
+                <h4>💡 Example Practice</h4>
+                <p>
+                    Introduce yourself for 1 minute using simple sentences:
+                    <br>
+                    "My name is..., I study..., I like..., My goal is..."
+                </p>
+                <h4>💡 Tips</h4>
+                <ul>
+                    <li>Do not be afraid of making mistakes</li>
+                    <li>Focus on fluency first, then accuracy</li>
+                    <li>Speak slowly and clearly</li>
+                </ul>
+            </div>
+        </div>
+        <!-- READING -->
+        <div class="card full">
+            <h3 onclick="toggleDetail('readingDetail')">📖 Reading Strategy</h3>
+            <p>
+                Reading helps students improve vocabulary, grammar understanding, and comprehension skills
+            </p>
+            <div id="readingDetail" style="display:none;">
+                <h4>📌 Learning Focus</h4>
+                <p>
+                    Students should develop the ability to understand texts efficiently using different reading techniques.
+                </p>
+                <h4>📚 Reading Techniques</h4>
+                <ul>
+                    <li><b>Skimming:</b> reading quickly to get the main idea</li>
+                    <li><b>Scanning:</b> searching for specific information</li>
+                    <li><b>Intensive Reading:</b> analyzing detailed information</li>
+                </ul>
+                <h4>📌 Practice Method</h4>
+                <ul>
+                    <li>Read short articles or news daily</li>
+                    <li>Highlight unfamiliar vocabulary</li>
+                    <li>Guess meaning from context</li>
+                    <li>Read aloud to improve pronunciation</li>
+                </ul>
+                <h4>💡 Tips</h4>
+                <ul>
+                    <li>Do not translate word by word</li>
+                    <li>Focus on sentence meaning</li>
+                    <li>Build vocabulary gradually</li>
+                </ul>
+            </div>
+        </div>
+        <!-- WRITING -->
+        <div class="card full">
+            <h3 onclick="toggleDetail('writingDetail')">✍️ Writing Strategy</h3>
+            <p>
+                Writing is a productive skill that helps students organize ideas and apply grammar rules correctly.
+            </p>
+            <div id="writingDetail" style="display:none;">
+                <h4>📌 Learning Focus</h4>
+                <p>
+                    Students should focus on clarity, structure, and coherence in writing.
+                </p>
+                <h4>📌 Writing Structure</h4>
+                <ul>
+                    <li>Subject + Verb + Object (basic sentence)</li>
+                    <li>Use simple present tense for daily writing</li>
+                    <li>Use connectors (and, but, because)</li>
+                </ul>
+                <h4>📌 Practice Method</h4>
+                <ul>
+                    <li>Write daily journals (5–10 sentences)</li>
+                    <li>Describe your daily activities</li>
+                    <li>Rewrite sentences to improve structure</li>
+                </ul>
+                <h4>💡 Tips</h4>
+                <ul>
+                    <li>Start with simple sentences</li>
+                    <li>Avoid complex grammar at the beginning</li>
+                    <li>Check grammar using tools</li>
+                </ul>
+            </div>
+        </div>
+        <!-- GENERAL -->
+        <div class="card full">
+            <h3>🚀 General Learning Strategy</h3>
+            <p>
+                Effective English learning requires consistency, practice, and the integration of all skills.
+            </p>
+            <ul>
+                <li>Practice English every day</li>
+                <li>Combine listening, speaking, reading, and writing</li>
+                <li>Use English in daily conversations</li>
+                <li>Think in English instead of translating</li>
+                <li>Stay motivated and set learning goals</li>
+            </ul>
+        </div>
+        <!-- PROGRESS TRACKER -->
+        <div class="card full">
+            <h3>📊 Learning Progress Tracker</h3>
+            <p>Track your daily learning activities:</p>
+            <label><input type="checkbox" onclick="updateProgress()"> Listening Practice</label><br>
+            <label><input type="checkbox" onclick="updateProgress()"> Speaking Practice</label><br>
+            <label><input type="checkbox" onclick="updateProgress()"> Reading Practice</label><br>
+            <label><input type="checkbox" onclick="updateProgress()"> Writing Practice</label><br>
+            <p><b>Your Progress:</b></p>
+            <div style="background:#ddd; border-radius:10px;">
+                <div id="progressBar" style="width:0%; background:#2ecc71; color:white; text-align:center; border-radius:10px;">
+                    0%
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>👤 About</h2>
+        <div class="card profile">
+            <img src="img/pas foto.jpeg"class="foto"alt="Profile Photo">
+            <h3>Daniel Christian Sitompul</h3>
+            <p class="role">Student of TRPL • Web Developer</p>
+            <hr>
+            <h4>📌 Personal Information</h4>
+            <p><b>Study Program:</b> Teknologi Rekayasa Perangkat Lunak (TRPL)</p>
+            <p><b>Course:</b> English Conversation 2</p>
+            <p><b>Role:</b> Website Creator & Developer</p>
+            <hr>
+            <h4>📖 About This Website</h4>
+            <p>
+                This website was developed as a project for the English Conversation 2 course.
+                It serves as a digital learning platform that provides structured materials
+                interactive practice, and learning strategies to improve students’ English
+                communication skills.
+            </p>
+            <p>
+                The goal of this website is to help students learn English in a more engaging, 
+                practical, and modern way by combining theory and real-life practice.
+            </p>
+            <hr>
+            <h4>🎯 Purpose</h4>
+            <ul>
+                <li>To provide accessible learning materials</li>
+                <li>To improve students' speaking skills</li>
+                <li>To support independent learning</li>
+                <li>To create an interactive digital learning experience</li>
+            </ul>
+            <hr>
+            <h4>📱 Social Media</h4>
+            <div class="social-buttons">
+                <a href="https://instagram.com/niel.sitompul" target="_blank" class="btn ig">Instagram</a>
+                <a href="https://wa.me/6281239576298" target="_blank" class="btn wa">WhatsApp</a>
+            </div>
+            <hr>
+            <h4>📧 Contact</h4>
+            <p><b>Email:</b> danielcsitompul@students.polmed.ac.id</p>
+            <hr>
+            <p style="text-align:center; margin-top:15px;">
+                "Learning English is not about perfection, but about progress."
+            </p>
+        </div>
+        <div class="empty-fill">
+            <h2>🚀 Keep Learning & Practicing</h2>
+            <p>Your English journey starts here</p>
+        </div>
+    </section>
+    </main>
+
+    <div class="wave">
+        <footer>
+            <p>© 2026 English Conversation 2</p>
+        </footer>
+    </div>
+    <audio id="clickSound"src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init("dBnccruBuHm5bphjg");</script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+    <div id="particles-js"></div>
+    <button id="topBtn" onclick="scrollToTop()">⬆</button>
+    <script src="js/background.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/speech.js"></script>
+    <script src="js/xp.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/effects.js"></script>
+</body>
+</html>
